@@ -129,9 +129,9 @@
   .cta-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,4rem);font-weight:600;line-height:1.15;color:var(--branco);max-width:780px;margin:0 auto 16px;}
   .cta-subtitle{font-size:1rem;color:var(--cinza);line-height:1.7;max-width:480px;margin:0 auto 52px;}
   .contatos{display:flex;flex-direction:column;align-items:center;gap:14px;position:relative;z-index:1;}
-  .contato-item{display:flex;align-items:center;gap:14px;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;color:var(--branco);text-decoration:none;padding:15px 40px;border:1px solid rgba(168,212,32,0.25);transition:all 0.3s;width:fit-content;}
+  .contato-item{display:flex;align-items:center;justify-content:center;gap:14px;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.08em;color:var(--branco);text-decoration:none;padding:15px 32px;border:1px solid rgba(168,212,32,0.25);transition:all 0.3s;width:280px;text-align:center;word-break:break-all;}
   .contato-item:hover{border-color:var(--lima);color:var(--lima);background:rgba(168,212,32,0.04);}
-  .contato-item .ci{color:var(--lima);font-size:0.9rem;}
+  .contato-item .ci{color:var(--lima);font-size:0.9rem;flex-shrink:0;}
 
   /* FOOTER */
   footer{background:var(--asfalto);padding:36px 80px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(168,212,32,0.15);}
@@ -153,17 +153,28 @@
     .hero-left{padding:120px 28px 56px;}
     .hero-right{height:70vw;}
     .hero-logo{width:72px;top:16px;right:16px;}
-    section{padding:64px 28px;}
+    section{padding:56px 24px;}
     .porque-grid,.trilhas-grid{grid-template-columns:1fr;}
-    .paraquem-layout{grid-template-columns:1fr;gap:40px;}
-    .includes-strip{padding:22px 28px;gap:18px;}
+    .paraquem-layout{grid-template-columns:1fr;gap:36px;}
+    .paraquem-item{padding:16px;}
+    .paraquem-text{font-size:0.85rem;}
+    .includes-strip{padding:20px 24px;gap:14px;}
     footer{padding:28px 24px;flex-direction:column;gap:18px;text-align:center;}
     .hero-stats{gap:20px;flex-wrap:wrap;}
-    .contato-item{padding:13px 24px;width:100%;max-width:320px;justify-content:center;}
+    .contato-item{padding:13px 20px;width:90%;max-width:320px;font-size:0.65rem;letter-spacing:0.04em;}
     .trilha-header{padding:28px 24px 22px;}
     .trilha-body.open{padding:0 24px 22px;}
     .percurso-header{padding:22px 24px;}
     .percurso-body.open{padding:0 24px 16px 52px;}
+    .timeline{padding-left:24px;}
+    .timeline-item{grid-template-columns:80px 1fr;gap:16px;padding:20px 0 20px 24px;}
+    .timeline-item::before{left:-28px;top:26px;}
+    .timeline-year{font-size:1.1rem;}
+    .timeline-place{font-size:0.9rem;}
+    .timeline-detail{font-size:0.75rem;}
+    .section-title{font-size:1.8rem;margin-bottom:36px;}
+    .porque-num{font-size:2.8rem;}
+    .cta-title{font-size:1.8rem;}
   }
 </style>
 </head>
